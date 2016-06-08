@@ -6,7 +6,7 @@
 
     <div id="footer">
       <div class="container">
-        <p class="text-muted">Footer content here.</p>
+        <p1 class="text-muted">Hampton Rentals<br>123 10th St. Pendleton, OR 97801</p1>
       </div>
     </div>
 

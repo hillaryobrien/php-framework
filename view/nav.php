@@ -9,25 +9,14 @@
             <span class="icon-bar"></span>
             <span class="icon-bar"></span>
           </button>
-          <a class="navbar-brand" href="#">Project name</a>
+          <a class="navbar-brand" href="#">Hampton Rentals</a>
         </div>
         <div class="navbar-collapse collapse">
           <ul class="nav navbar-nav">
-            <li><a href="#">Menu 1</a></li>
-            <li><a href="#">Menu 2</a></li>
-            <li><a href="#">Menu 3</a></li>
-            <li class="dropdown">
-              <a href="#" class="dropdown-toggle" data-toggle="dropdown">Menu 4 <b class="caret"></b></a>
-              <ul class="dropdown-menu">
-                <li><a href="#">Action</a></li>
-                <li><a href="#">Another action</a></li>
-                <li><a href="#">Something else here</a></li>
-                <li class="divider"></li>
-                <li class="dropdown-header">Nav header</li>
-                <li><a href="#">Separated link</a></li>
-                <li><a href="#">One more separated link</a></li>
-              </ul>
-            </li>
+            <li><a href="<?php print APP_DOC_ROOT . '/home/page'; ?>">Home</a></li>
+            <li><a href="<?php print APP_DOC_ROOT . '/home/table'; ?>">Rentals</a></li>
+            <li><a href="<?php print APP_DOC_ROOT . '/home/form'; ?>">Apply Now</a></li>
+            <li><a href="<?php print APP_DOC_ROOT . '/home/contact'; ?>">Contact Us</a></li>
           </ul>
 
 <?php if ( 0 !== APP_AUTH_TYPE && isset($_SESSION["username"]) ) { ?>
@@ -36,9 +25,6 @@
             <li class="dropdown">
               <a href="#" class="dropdown-toggle" data-toggle="dropdown"><?php print $_SESSION['username']; ?> <b class="caret"></b></a>
               <ul class="dropdown-menu">
-                  <li><a href="#">Profile</a></li>
-                  <li><a href="#">Settings</a></li>
-                  <li class="divider"></li>
                   <li><a href="<?php echo APP_DOC_ROOT; ?>/auth/logout">Logout</a></li>
               </ul>
             </li>
